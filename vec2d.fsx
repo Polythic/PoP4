@@ -27,7 +27,7 @@ let polyLen (n: int) : float =
 
 
 let pi = 3.14
-let compareToCirc n =
+let compareToCirc (n : float) : float =
   let a = n/(2.0*pi)
   a
 
@@ -38,5 +38,11 @@ for i = 2 to 20 do
   else
     printfn "%A         %A         %A" i (polyLen i) (compareToCirc (polyLen i))
 
-
-//printfn "Function gives: %A How Close to circle: %A" length compareFunctionToPi
+(*
+b)
+Når n stiger, og dermed antallet af punkter på cirklen, vil afstanden mellem punkterne blive kortere. Når afstanden bliver kortere, får polygonet en form, der bliver mere og mere som en cirkel.
+Når n -> uendelig, bliver der nok punkter til, at polygonet til sidst bliver en cirkel:
+*)
+printfn "Vi lader n stige hurtigere:"
+for i = 1 to 6 do
+  printfn "%A         %A         %A" (pown 10 i) (polyLen (pown 10 i)) (compareToCirc (polyLen (pown 10 i)))
