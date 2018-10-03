@@ -8,7 +8,7 @@ let len (x: float * float) : float =
 //printfn "%A" (len (5.0,6.0))
 
 let ang (x: float * float) : float =
-  let angle = atan2 (fst x) (snd x)
+  let angle = atan2 (snd x) (fst x)
   angle
 
 //printfn "%A" (ang (20.0, 10.0))
@@ -33,7 +33,7 @@ let dot (x: float * float) (y: float * float) : float =
   let xsecond = snd x
   let yfirst = fst y
   let ysecond = snd y
-  let dotVector : float = xfirst*xsecond + yfirst*ysecond
+  let dotVector : float = xfirst*yfirst + xsecond*ysecond
   dotVector
 
 printfn "%A" (dot (2.0,2.0) (3.0,3.0))
