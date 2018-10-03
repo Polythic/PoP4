@@ -19,7 +19,7 @@ let polyLen (n: int) : float =
   let convertLength (n: int) : float =
     let a = vec2d.len (calcDotVector (n))
     a
-  // vi har nu længden af afstanden mellem to punkter, det ganger vi med n for at få summen
+  //Vi har nu længden af afstanden mellem to punkter, det ganger vi med n for at få summen
   let sumLength (n: int) : float =
     let sum = (convertLength (n))*float n
     sum
