@@ -44,8 +44,6 @@ let polyLen (n: int) : float =
     let a = vec2d.len (calcPointVector (n))
     a
 
-  // Vi har nu længden af afstanden mellem to punkter, det ganger vi med n for at få summen
-
   /// <summary>Funktionen sumLength udregner summen af længderne udregnet ved at kalde convertLength</summary>
   /// <remarks>Da funktionen kalder andre funktioner, gælder samme begrænsninger for input som dem.</remarks>
   /// <param name="n">Parameteren n bruges til at kalde convertLength af dette, og gange resultatet med n, for at opnå den samlede længde</param>
