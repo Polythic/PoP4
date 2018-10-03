@@ -1,6 +1,6 @@
 let polyLen (n: int) : float =
   let xVector = (1.0,0.0)
-  let pi = 3.14
+  let pi = 3.141592653589
 
   let calcAngle (n: int) : float =
     let angle = 2.0*pi/(float n)
@@ -26,7 +26,7 @@ let polyLen (n: int) : float =
   sumLength (n)
 
 
-let pi = 3.14
+let pi = 3.141592653589
 let compareToCirc (n : float) : float =
   let a = n/(2.0*pi)
   a
