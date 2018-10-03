@@ -31,7 +31,7 @@ let compareToCirc (n : float) : float =
   let a = n/(2.0*pi)
   a
 
-printfn "n:         polyLen:         n/omkreds:"
+printfn "n:         polyLen:         polyLen/omkreds:"
 for i = 2 to 20 do
   if i < 10 then
     printfn " %A         %A         %A" i (polyLen i) (compareToCirc (polyLen i))
