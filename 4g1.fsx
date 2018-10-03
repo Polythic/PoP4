@@ -13,3 +13,6 @@ printfn " Branch: 0 - %b" (vec2d.add (2.0,2.0) (2.0,2.0) = (4.0,4.0))
 
 printfn " Unit: dot"
 printfn " Branch: 0 - %b" (vec2d.dot (2.0,3.0) (4.0,5.0) = 23.0)
+
+//Grunden til vi ikke har nogle branches med i vores white-box analyse er fordi vi ikke benytter nogle if-statements eller nogle loops.
+//Sagt på en anden måde indeholder koden ingen conditionel kode. Koden kan altså kun gå en vej.
